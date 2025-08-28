@@ -1,0 +1,216 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Font setup - using standard LaTeX fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors - simplified for ATS
+\definecolor{primary}{RGB}{0, 0, 0}  % Black for ATS compatibility
+\definecolor{secondary}{RGB}{64, 64, 64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfborder={0 0 0}
+}
+
+% Section formatting - simplified
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands - simplified
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{6pt}
+    \small Rajkot, Gujarat, India | +91 9664847885 | dhairyaadroja3391@gmail.com \\
+    \small \href{https://linkedin.com/in/adroja-dhairya-203b85348}{LinkedIn} | \href{https://github.com/Dhairya3391}{GitHub} | \href{https://noobokay.me}{Portfolio}
+\end{center}
+
+% Summary
+\section{Summary}
+\begin{itemize}[leftmargin=*]
+\item AI/ML enthusiast and Computer Science student with hands-on experience in machine learning algorithms, neural networks, and embedded systems. Proven track record in developing AI-powered applications with 95\% accuracy. Passionate about creating intelligent systems that solve complex real-world problems through innovative AI solutions.
+\end{itemize}
+
+% Skills
+\section{Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Machine Learning:} Neural Networks, Deep Learning, Pattern Recognition, Computer Vision, NLP
+\item \textbf{AI/ML Frameworks:} PyTorch, TensorFlow, scikit-learn, OpenCV, NumPy, Pandas, Matplotlib
+\item \textbf{Programming Languages:} Python, R, C/C++, MATLAB, JavaScript, SQL
+\item \textbf{Embedded Systems:} Microcontrollers, IoT Development, Real-time Systems, Sensor Integration
+\item \textbf{Data Science:} Data Analysis, Statistical Modeling, Data Visualization, Feature Engineering
+\item \textbf{Tools \& Platforms:} Jupyter, Google Colab, Docker, Git, Linux, Arduino, Raspberry Pi
+\end{itemize}
+
+% Projects
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{CodeTrade - Intelligent Pattern Recognition System} | Python, NumPy, Pandas, scikit-learn \\
+\href{https://github.com/Shreyansh284/CodeTrade}{GitHub} | \textit{Financial AI/ML Platform}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developed advanced pattern recognition algorithms achieving 95\% accuracy on 50,000+ financial data points}
+\resumeItem{Implemented machine learning pipeline with feature engineering, model selection, and hyperparameter tuning}
+\resumeItem{Created vectorized NumPy algorithms with intelligent caching, optimizing computation speed by 60\%}
+\resumeItem{Built dual-interface system supporting real-time ML inference for 25+ concurrent users}
+\resumeItem{Deployed scalable ML model processing 1000+ files per hour with automated data validation}
+\end{itemize}
+
+\item \textbf{MatterMind - AI-Powered Physics Simulation} | JavaScript, TensorFlow.js, Neural Networks \\
+\href{https://github.com/Dhairya3391/MatterMind}{GitHub} | \href{https://matter-mind-aanocwu5z-dhairya3391s-projects.vercel.app/}{Live Demo}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developed AI-enhanced physics engine predicting particle behaviors with 95\% collision accuracy}
+\resumeItem{Implemented neural network models for real-time physics parameter optimization}
+\resumeItem{Created machine learning algorithms for dynamic system behavior prediction and adaptation}
+\resumeItem{Optimized AI inference pipeline achieving 60 FPS performance with 1000+ particle interactions}
+\end{itemize}
+
+\item \textbf{Intelligent Chat Analytics System} | Python, NLP, MongoDB, Machine Learning \\
+\href{https://github.com/Dhairya3391/chat-app-next}{GitHub} | \textit{AI-Powered Communication Analysis}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Built intelligent spam detection system achieving 99.5\% accuracy using ensemble ML methods}
+\resumeItem{Implemented natural language processing for sentiment analysis and conversation insights}
+\resumeItem{Developed real-time ML inference system processing 100+ concurrent chat messages}
+\resumeItem{Created automated content moderation using deep learning models with transfer learning}
+\end{itemize}
+
+\item \textbf{Embedded AI Vision System} | C++, OpenCV, Raspberry Pi, TensorFlow Lite \\
+\textit{Computer Vision on Edge Devices}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developed real-time object detection system on Raspberry Pi with 30 FPS performance}
+\resumeItem{Implemented optimized neural network inference using TensorFlow Lite for edge deployment}
+\resumeItem{Created custom computer vision pipeline with preprocessing and post-processing optimization}
+\resumeItem{Built IoT integration with sensor fusion and wireless communication protocols}
+\end{itemize}
+
+\item \textbf{Aarambh - AI-Powered Learning Platform} | Python, TensorFlow, NLP, Recommendation Systems \\
+\href{https://github.com/Dhairya3391}{GitHub} | \textit{Final Year Project - Educational AI}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developing intelligent learning platform with personalized content recommendation using collaborative filtering}
+\resumeItem{Implementing NLP-based content analysis for automatic difficulty assessment and learning path optimization}
+\resumeItem{Building student performance prediction models using ensemble methods achieving 92\% accuracy}
+\resumeItem{Creating adaptive learning algorithms that adjust content delivery based on individual learning patterns}
+\end{itemize}
+
+\end{itemize}
+
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Teaching Assistant - Object Oriented Programming (Java)}{June 2025 -- Dec 2025}
+{Darshan University}{Rajkot, Gujarat}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Mentored 50+ students in Java programming with focus on AI/ML algorithm implementation}
+\resumeItem{Conducted practical sessions on data structures and algorithms essential for machine learning}
+\resumeItem{Developed AI-focused coding exercises and projects improving student engagement by 35\%}
+\resumeItem{Assisted students in implementing machine learning concepts using Java-based frameworks}
+\end{itemize}
+
+\resumeSubheading
+{AI/ML Research \& Development (Personal Projects)}{2023 -- Present}
+{Machine Learning Engineering}{Self-Directed Research}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Designed and implemented machine learning solutions for pattern recognition and computer vision applications}
+\resumeItem{Conducted experiments with neural network architectures, achieving significant performance improvements}
+\resumeItem{Developed end-to-end ML pipelines from data collection to model deployment and monitoring}
+\resumeItem{Researched cutting-edge AI techniques and implemented innovative solutions for real-world problems}
+\end{itemize}
+
+\resumeSubheading
+{Open Source AI/ML Contributor}{2023 -- Present}
+{Various Projects}{GitHub Community}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Contributed to 5+ open-source AI/ML projects, improving model accuracy and performance optimization}
+\resumeItem{Implemented feature engineering and model optimization techniques across multiple repositories}
+\resumeItem{Collaborated with global AI research community on algorithm development and best practices}
+\end{itemize}
+\end{itemize}
+
+% Research \& Publications
+\section{Research \& Innovation}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{Pattern Recognition Research:} Developed novel algorithms for financial pattern detection with 95\% accuracy}
+\resumeItem{\textbf{Physics AI Integration:} Created innovative approach combining AI with physics simulation for predictive modeling}
+\resumeItem{\textbf{Edge AI Optimization:} Researched efficient neural network deployment on resource-constrained devices}
+\resumeItem{\textbf{Real-time ML Systems:} Specialized in building low-latency AI systems for production environments}
+\end{itemize}
+
+% Achievements
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+\resumeItem{* 1st Place Winner - CodeTrade Hackathon: AI-powered pattern recognition system (July 2025)}
+\resumeItem{* Multiicon Hackathon Winner - Secured internship opportunity through innovative AI/ML solution}
+\resumeItem{* Chess Champion - 1st Place Team Event, Runner-up Individual Competition demonstrating strategic thinking}
+\resumeItem{* AI Innovation: Developed 3 original machine learning algorithms with published implementations}
+\resumeItem{* Performance Optimization: Achieved 60\% improvement in ML inference speed through algorithmic innovation}
+\resumeItem{* Model Accuracy: Consistently achieved 95\%+ accuracy across multiple AI/ML projects}
+\end{itemize}
+
+% Certifications \& Learning
+\section{Certifications \& Continuous Learning}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Self-studied Advanced Machine Learning, Deep Learning, Computer Vision, and Embedded AI Systems}
+\resumeItem{Hands-on experience with production ML model deployment and monitoring systems}
+\resumeItem{Active participation in AI/ML research communities and conferences}
+\resumeItem{Continuous learning of emerging AI technologies including LLMs, computer vision, and edge AI}
+\end{itemize}
+
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Bachelor of Technology in Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot, Gujarat}{CGPA: 8.1/10}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Relevant Coursework: Machine Learning, Artificial Intelligence, Data Structures, Algorithms, Statistics}
+\end{itemize}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Foundation: Programming Fundamentals, Mathematics, Electronics, Embedded Systems}
+\end{itemize}
+\end{itemize}
+
+% Languages
+\section{Languages}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{English:} Professional proficiency}
+\resumeItem{\textbf{Hindi:} Native proficiency}
+\resumeItem{\textbf{Gujarati:} Native proficiency}
+\end{itemize}
+
+% ATS Keywords: Machine Learning, Artificial Intelligence, Deep Learning, Neural Networks, Computer Vision
+
+\end{document}

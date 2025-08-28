@@ -1,0 +1,199 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Font setup - using standard LaTeX fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors - simplified for ATS
+\definecolor{primary}{RGB}{0, 0, 0}  % Black for ATS compatibility
+\definecolor{secondary}{RGB}{64, 64, 64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfborder={0 0 0}
+}
+
+% Section formatting - simplified
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands - simplified
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{6pt}
+    \small Rajkot, Gujarat, India | +91 9664847885 | dhairyaadroja3391@gmail.com \\
+    \small \href{https://linkedin.com/in/adroja-dhairya-203b85348}{LinkedIn} | \href{https://github.com/Dhairya3391}{GitHub} | \href{https://noobokay.me}{Portfolio}
+\end{center}
+
+% Professional Summary
+\section{Professional Summary}
+\begin{itemize}[leftmargin=*]
+\item Data Science enthusiast and Computer Science student with expertise in statistical analysis, machine learning, and data visualization. Proven experience in extracting actionable insights from large datasets (50,000+ data points) with 95\% accuracy. Passionate about transforming complex data into strategic business intelligence and predictive models.
+\end{itemize}
+
+% Technical Skills
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Data Science \& Analytics:} Statistical Analysis, Predictive Modeling, Data Mining, A/B Testing
+\item \textbf{Machine Learning:} Supervised/Unsupervised Learning, Feature Engineering, Model Selection, Cross-Validation
+\item \textbf{Programming Languages:} Python, R, SQL, JavaScript, MATLAB
+\item \textbf{Data Science Libraries:} Pandas, NumPy, scikit-learn, Matplotlib, Seaborn, Plotly, Scipy
+\item \textbf{Database \& Big Data:} MongoDB, PostgreSQL, MySQL, Data Warehousing, ETL Pipelines
+\item \textbf{Visualization \& BI:} Tableau, Power BI, D3.js, Jupyter Notebooks, Streamlit, Dashboard Development
+\end{itemize}
+
+% Projects
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{CodeTrade - Financial Data Analytics Platform} | Python, Pandas, NumPy, Streamlit \\
+\href{https://github.com/Shreyansh284/CodeTrade}{GitHub} | \textit{Advanced Financial Pattern Analysis}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Analyzed 50,000+ financial data points using advanced statistical methods achieving 95\% pattern detection accuracy}
+\resumeItem{Developed comprehensive data pipeline with ETL processes, data cleaning, and feature engineering}
+\resumeItem{Created interactive dashboards with real-time analytics supporting 25+ concurrent business users}
+\resumeItem{Implemented predictive models using ensemble methods reducing prediction error by 40\%}
+\resumeItem{Built automated reporting system generating insights from 1000+ files per hour with data validation}
+\end{itemize}
+
+\item \textbf{Enterprise Chat Analytics \& Intelligence} | Python, NLP, MongoDB, Data Visualization \\
+\href{https://github.com/Dhairya3391/chat-app-next}{GitHub} | \textit{Communication Data Analysis Platform}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developed comprehensive analytics dashboard processing 100+ concurrent user interactions}
+\resumeItem{Implemented sentiment analysis and communication pattern recognition using NLP techniques}
+\resumeItem{Created automated anomaly detection system for spam identification with 99.5\% accuracy}
+\resumeItem{Built real-time KPI tracking and business intelligence reporting for administrative insights}
+\resumeItem{Designed user behavior analysis models predicting engagement patterns and churn probability}
+\end{itemize}
+
+\item \textbf{Physics Simulation Data Analysis} | Python, Statistical Modeling, Data Visualization \\
+\href{https://github.com/Dhairya3391/MatterMind}{GitHub} | \textit{Scientific Data Analysis Platform}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Analyzed complex physics simulation data from 1000+ particle interactions with statistical modeling}
+\resumeItem{Developed predictive models for particle behavior with 95\% accuracy using regression analysis}
+\resumeItem{Created comprehensive data visualization suite for scientific data interpretation}
+\resumeItem{Implemented performance optimization analysis reducing computational complexity by 40\%}
+\end{itemize}
+
+\item \textbf{Business Intelligence Dashboard Suite} | Python, Tableau, SQL, Data Warehousing \\
+\textit{Multi-Domain Analytics Platform}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Designed end-to-end business intelligence solution integrating multiple data sources}
+\resumeItem{Built automated ETL pipelines processing diverse datasets with data quality validation}
+\resumeItem{Created executive dashboards with KPI tracking and predictive analytics for strategic decision-making}
+\resumeItem{Implemented data warehouse architecture supporting historical analysis and trend forecasting}
+\end{itemize}
+
+\end{itemize}
+
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Data Scientist (Personal Projects)}{2023 -- Present}
+{Analytics \& Business Intelligence Development}{Self-Directed Research}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Conducted end-to-end data science projects from data collection to model deployment and monitoring}
+\resumeItem{Developed predictive models and analytics solutions extracting actionable insights from complex datasets}
+\resumeItem{Created automated reporting systems and interactive dashboards for business intelligence}
+\resumeItem{Implemented statistical analysis and machine learning techniques for pattern recognition and forecasting}
+\end{itemize}
+
+\resumeSubheading
+{Open Source Data Science Contributor}{2023 -- Present}
+{Various Projects}{GitHub Community}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Contributed to 5+ open-source data science projects focusing on analytics and visualization improvements}
+\resumeItem{Implemented data processing optimizations and statistical analysis enhancements}
+\resumeItem{Collaborated with global data science community on best practices and methodology improvements}
+\end{itemize}
+\end{itemize}
+
+% Data Science Expertise
+\section{Data Science Expertise}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{Statistical Analysis:} Hypothesis testing, correlation analysis, regression modeling, time series analysis}
+\resumeItem{\textbf{Machine Learning:} Classification, clustering, dimensionality reduction, ensemble methods}
+\resumeItem{\textbf{Data Engineering:} ETL pipelines, data cleaning, feature engineering, data warehouse design}
+\resumeItem{\textbf{Business Intelligence:} KPI development, dashboard design, automated reporting, strategic analytics}
+\resumeItem{\textbf{Data Visualization:} Interactive dashboards, statistical plots, business presentations, storytelling with data}
+\end{itemize}
+
+% Achievements
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+\resumeItem{* 1st Place Winner - CodeTrade Hackathon: Advanced financial data analytics platform (July 2025)}
+\resumeItem{* Multiicon Hackathon Winner - Secured internship opportunity through innovative data science solution}
+\resumeItem{* Chess Champion - 1st Place Team Event, Runner-up Individual Competition demonstrating analytical thinking}
+\resumeItem{* Analytics Excellence: Achieved 95\% accuracy in pattern recognition across 50,000+ data points}
+\resumeItem{* Performance Optimization: Improved data processing efficiency by 60\% through algorithmic innovation}
+\resumeItem{* Business Impact: Developed analytics solutions serving 25+ concurrent users with real-time insights}
+\end{itemize}
+
+% Certifications \& Learning
+\section{Certifications \& Continuous Learning}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Self-studied Advanced Statistics, Machine Learning, Data Mining, and Business Intelligence}
+\resumeItem{Hands-on experience with production-level data science workflows and model deployment}
+\resumeItem{Active participation in data science communities and kaggle competitions}
+\resumeItem{Continuous learning of emerging data science tools, cloud platforms, and big data technologies}
+\end{itemize}
+
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Bachelor of Technology in Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot, Gujarat}{CGPA: 8.1/10}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Relevant Coursework: Statistics, Data Structures, Algorithms, Database Systems, Machine Learning}
+\end{itemize}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Foundation: Mathematics, Programming, Statistics, Database Management, System Analysis}
+\end{itemize}
+\end{itemize}
+
+% Languages
+\section{Languages}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{English:} Professional proficiency}
+\resumeItem{\textbf{Hindi:} Native proficiency}
+\resumeItem{\textbf{Gujarati:} Native proficiency}
+\end{itemize}
+
+% ATS Keywords: Data Science, Machine Learning, Statistical Analysis, Python, Business Intelligence
+
+\end{document}

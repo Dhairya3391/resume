@@ -1,0 +1,196 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Font setup - using standard LaTeX fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors - simplified for ATS
+\definecolor{primary}{RGB}{0, 0, 0}  % Black for ATS compatibility
+\definecolor{secondary}{RGB}{64, 64, 64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfborder={0 0 0}
+}
+
+% Section formatting - simplified
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands - simplified
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{6pt}
+    \small Rajkot, Gujarat, India | +91 9664847885 | dhairyaadroja3391@gmail.com \\
+    \small \href{https://linkedin.com/in/adroja-dhairya-203b85348}{LinkedIn} | \href{https://github.com/Dhairya3391}{GitHub} | \href{https://noobokay.me}{Portfolio}
+\end{center}
+
+% Summary
+\section{Summary}
+\begin{itemize}[leftmargin=*]
+\item DevOps-focused Computer Science student with hands-on experience in containerization, automation, and infrastructure management. Proven expertise in Docker, CI/CD pipelines, and system optimization. Passionate about building reliable, scalable systems and automating deployment processes.
+\end{itemize}
+
+% Skills
+\section{Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{DevOps \& Infrastructure:} Docker, Kubernetes, CI/CD, Jenkins, GitHub Actions, Nginx, SSL/TLS
+\item \textbf{Cloud \& Platforms:} AWS, Vercel, Linux Administration, Shell Scripting, System Monitoring
+\item \textbf{Programming Languages:} Python, JavaScript, TypeScript, Rust, Shell/Bash, SQL
+\item \textbf{Databases \& Storage:} MongoDB, PostgreSQL, MySQL, Redis, Database Optimization
+\item \textbf{Monitoring \& Security:} System Monitoring, Network Security, VPN, Reverse Proxy, SSL Certificates
+\item \textbf{Automation:} Infrastructure as Code, Configuration Management, Automated Testing, Performance Monitoring
+\end{itemize}
+
+% Projects
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Enterprise Chat Application - DevOps Pipeline} | Docker, CI/CD, Vercel, MongoDB \\
+\href{https://github.com/Dhairya3391/chat-app-next}{GitHub} | \textit{Production-Ready Deployment}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Architected complete CI/CD pipeline with automated testing, building, and deployment reducing deployment time by 70\%}
+\resumeItem{Containerized application with Docker, optimizing image size by 60\% through multi-stage builds}
+\resumeItem{Implemented automated performance monitoring and alerting system achieving 99.8\% uptime}
+\resumeItem{Configured SSL/TLS certificates and security headers ensuring enterprise-grade security compliance}
+\resumeItem{Set up database backup automation and disaster recovery procedures with 15-minute RTO}
+\end{itemize}
+
+\item \textbf{Infrastructure Automation Suite} | Python, Shell Scripting, Docker \\
+\href{https://github.com/Dhairya3391}{GitHub} | \textit{System Administration Tools}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developed automated deployment scripts reducing manual configuration tasks by 80\%}
+\resumeItem{Created monitoring dashboard for 10+ containerized services with real-time health checks}
+\resumeItem{Implemented log aggregation and analysis system processing 10GB+ daily logs}
+\resumeItem{Built automated backup solutions with configurable retention policies and integrity verification}
+\end{itemize}
+
+\item \textbf{CodeTrade - Scalable Backend Infrastructure} | Python, Docker, Load Balancing \\
+\href{https://github.com/Shreyansh284/CodeTrade}{GitHub} | \textit{High-Performance Computing Platform}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Designed scalable architecture handling 50,000+ concurrent data processing requests}
+\resumeItem{Implemented horizontal scaling with load balancers supporting 25+ concurrent web users}
+\resumeItem{Optimized system performance through caching strategies, reducing response time by 60\%}
+\resumeItem{Set up comprehensive monitoring and alerting for system health and performance metrics}
+\end{itemize}
+
+\item \textbf{Aarambh - Learning Platform Infrastructure} | Docker, CI/CD, MongoDB, Nginx \\
+\href{https://github.com/Dhairya3391}{GitHub} | \textit{Final Year Project - Educational Platform DevOps}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Architecting scalable infrastructure for learning management platform supporting 500+ concurrent users}
+\resumeItem{Implementing automated deployment pipeline with testing, building, and production deployment stages}
+\resumeItem{Configuring load balancing and auto-scaling solutions for optimal resource utilization}
+\resumeItem{Setting up comprehensive monitoring, logging, and backup strategies for production environment}
+\end{itemize}
+
+\end{itemize}
+
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Teaching Assistant - Object Oriented Programming (Java)}{June 2025 -- Dec 2025}
+{Darshan University}{Rajkot, Gujarat}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Guided 50+ students in Java development environment setup, build tools, and deployment practices}
+\resumeItem{Conducted workshops on version control, CI/CD concepts, and automated testing frameworks}
+\resumeItem{Developed containerized lab environments using Docker improving setup efficiency by 70\%}
+\resumeItem{Mentored students on software development lifecycle and DevOps best practices}
+\end{itemize}
+
+\resumeSubheading
+{Infrastructure \& Automation Engineer (Personal Projects)}{2023 -- Present}
+{Self-Directed Infrastructure Development}{Remote}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Designed and maintained containerized infrastructure serving multiple applications with 99.5\% uptime}
+\resumeItem{Automated deployment processes using Docker and CI/CD pipelines, reducing manual intervention by 90\%}
+\resumeItem{Implemented comprehensive monitoring and alerting systems for proactive issue resolution}
+\resumeItem{Developed infrastructure as code solutions ensuring consistent and reproducible deployments}
+\end{itemize}
+
+\resumeSubheading
+{Open Source DevOps Contributor}{2023 -- Present}
+{Various Projects}{GitHub Community}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Contributed to 5+ open-source projects focusing on deployment automation and infrastructure optimization}
+\resumeItem{Improved CI/CD workflows and Docker configurations across multiple repositories}
+\resumeItem{Collaborated with global teams on infrastructure best practices and security implementations}
+\end{itemize}
+\end{itemize}
+
+% Achievements
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+\resumeItem{* 1st Place Winner - CodeTrade Hackathon: Built scalable backend infrastructure (July 2025)}
+\resumeItem{* Multiicon Hackathon Winner - Secured internship through innovative DevOps automation solutions}
+\resumeItem{* Chess Champion - 1st Place Team Event, Runner-up Individual Competition showcasing strategic planning}
+\resumeItem{* Performance Optimization: Achieved 60-70\% improvement in deployment and response times}
+\resumeItem{* Automation Impact: Reduced manual system administration tasks by 80-90\%}
+\end{itemize}
+
+% Certifications & Learning
+\section{Certifications \& Continuous Learning}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Self-studied AWS Cloud Services, Docker \& Kubernetes, Linux System Administration}
+\resumeItem{Hands-on experience with production-level deployments and infrastructure management}
+\resumeItem{Active participation in DevOps communities and continuous learning of emerging technologies}
+\end{itemize}
+
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Bachelor of Technology in Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot, Gujarat}{CGPA: 8.1/10}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Relevant Coursework: Computer Networks, Operating Systems, Database Systems, System Design}
+\end{itemize}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Foundation: System Administration, Network Configuration, Database Management}
+\end{itemize}
+\end{itemize}
+
+% Languages
+\section{Languages}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{English:} Professional proficiency}
+\resumeItem{\textbf{Hindi:} Native proficiency}
+\resumeItem{\textbf{Gujarati:} Native proficiency}
+\end{itemize}
+
+% ATS Keywords: DevOps, Docker, Kubernetes, CI/CD, Infrastructure Automation
+
+\end{document}

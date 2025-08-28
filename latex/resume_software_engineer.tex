@@ -1,0 +1,178 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Font setup - using standard LaTeX fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors - simplified for ATS
+\definecolor{primary}{RGB}{0, 0, 0}  % Black for ATS compatibility
+\definecolor{secondary}{RGB}{64, 64, 64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfborder={0 0 0}
+}
+
+% Section formatting - simplified
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands - simplified
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{6pt}
+    \small Rajkot, Gujarat, India | +91 9664847885 | dhairyaadroja3391@gmail.com \\
+    \small \href{https://linkedin.com/in/adroja-dhairya-203b85348}{LinkedIn} | \href{https://github.com/Dhairya3391}{GitHub} | \href{https://noobokay.me}{Portfolio}
+\end{center}
+
+% Summary
+\section{Summary}
+\begin{itemize}[leftmargin=*]
+\item Software Engineering student with expertise in full-stack development, embedded systems, and AI/ML. Proven track record of building scalable applications with 99.8\% reliability, winning hackathons, and contributing to open-source projects. Passionate about creating innovative solutions that solve real-world problems.
+\end{itemize}
+
+% Skills
+\section{Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Programming Languages:} Python, JavaScript, TypeScript, Java, C\#, Rust, C/C++, SQL
+\item \textbf{Web Development:} React, Next.js, Node.js, HTML5, CSS3, RESTful APIs, WebSocket, Express.js
+\item \textbf{Software Engineering:} Object-Oriented Programming, Design Patterns, Data Structures, Algorithms
+\item \textbf{Databases:} MongoDB, PostgreSQL, MySQL, Redis
+\item \textbf{Tools \& Technologies:} Git, Docker, Linux, CI/CD, Jest, Webpack, Nginx
+\item \textbf{Frameworks:} Flask, ASP.NET, React Native, Vue.js
+\end{itemize}
+
+% Projects
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Enterprise Chat Application} | Next.js, WebSocket, MongoDB, JWT \\
+\href{https://github.com/Dhairya3391/chat-app-next}{GitHub} | \textit{Real-time Communication Platform}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Architected scalable real-time chat application supporting 100+ concurrent users with 99.8\% message delivery rate}
+\resumeItem{Implemented secure JWT authentication system with role-based access control and 256-bit encryption}
+\resumeItem{Designed responsive UI/UX with React components, reducing load time by 40\% through code splitting}
+\resumeItem{Built comprehensive admin dashboard with user management and spam filtering achieving 99.5\% accuracy}
+\resumeItem{Deployed with automated CI/CD pipeline on Vercel with performance monitoring and error tracking}
+\end{itemize}
+
+\item \textbf{CodeTrade - Financial Analysis Platform} | Python, NumPy, Pandas, Streamlit \\
+\href{https://github.com/Shreyansh284/CodeTrade}{GitHub} | \textit{Pattern Recognition System}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developed financial analysis platform processing 50,000+ data points with 95\% pattern detection accuracy}
+\resumeItem{Built dual-interface architecture supporting 25+ concurrent web users and CLI processing 1000+ files/hour}
+\resumeItem{Optimized algorithms using vectorized NumPy operations and intelligent caching, reducing computation time by 60\%}
+\resumeItem{Implemented robust error handling and data validation ensuring 99.9\% system reliability}
+\end{itemize}
+
+\item \textbf{MatterMind - Physics Simulation Engine} | JavaScript, HTML5 Canvas, WebGL \\
+\href{https://github.com/Dhairya3391/MatterMind}{GitHub} | \href{https://matter-mind-aanocwu5z-dhairya3391s-projects.vercel.app/}{Live Demo}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Created interactive physics simulation engine handling 1000+ particles with consistent 60 FPS performance}
+\resumeItem{Implemented advanced collision detection algorithms with spatial partitioning achieving 95\% accuracy}
+\resumeItem{Optimized rendering pipeline using requestAnimationFrame and WebGL, improving performance by 40\%}
+\resumeItem{Designed modular architecture with plugin system for extensible physics behaviors}
+\end{itemize}
+
+\item \textbf{Aarambh - Learning Management Platform} | React, Node.js, MongoDB, Express.js \\
+\href{https://github.com/Dhairya3391}{GitHub} | \textit{Final Year Project - Educational Technology}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developing comprehensive learning platform with course management, progress tracking, and interactive content}
+\resumeItem{Implementing responsive web design supporting multiple device types with optimized user experience}
+\resumeItem{Building scalable backend architecture with user authentication, role management, and content delivery}
+\resumeItem{Integrating real-time features for collaborative learning and instructor-student communication}
+\end{itemize}
+
+\end{itemize}
+
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Teaching Assistant - Object Oriented Programming (Java)}{June 2025 -- Dec 2025}
+{Darshan University}{Rajkot, Gujarat}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Assisted 50+ students in understanding OOP concepts, design patterns, and Java programming fundamentals}
+\resumeItem{Conducted lab sessions, code reviews, and debugging workshops improving student performance by 25\%}
+\resumeItem{Developed supplementary coding exercises and project templates for enhanced learning outcomes}
+\resumeItem{Mentored students on software development best practices and industry-standard coding conventions}
+\end{itemize}
+
+\resumeSubheading
+{Open Source Contributor}{2023 -- Present}
+{Various Projects}{GitHub Community}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Contributed 10+ merged pull requests across 5 open-source projects, improving code quality and functionality}
+\resumeItem{Collaborated with global development teams using Git workflows and code review processes}
+\resumeItem{Fixed critical bugs and implemented new features in JavaScript, Python, and TypeScript codebases}
+\end{itemize}
+\end{itemize}
+
+% Achievements
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+\resumeItem{* 1st Place Winner - CodeTrade Hackathon at Darshan University among 30+ teams (July 2025)}
+\resumeItem{* Multiicon Hackathon Winner - Secured internship opportunity through innovative project development}
+\resumeItem{* Chess Champion - 1st Place Team Event, Runner-up Individual Competition at university level}
+\resumeItem{* Open Source Impact: 10+ merged pull requests across 5 projects with 500+ GitHub stars}
+\resumeItem{* Project Performance: Achieved 99.8\% uptime across all deployed applications}
+\end{itemize}
+
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Bachelor of Technology in Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot, Gujarat}{CGPA: 8.1/10}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Relevant Coursework: Data Structures, Algorithms, Software Engineering, Database Systems, Computer Networks}
+\end{itemize}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Foundation: Programming Fundamentals, Web Development, Database Management, System Analysis}
+\end{itemize}
+\end{itemize}
+
+% Languages
+\section{Languages}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{English:} Professional proficiency}
+\resumeItem{\textbf{Hindi:} Native proficiency}
+\resumeItem{\textbf{Gujarati:} Native proficiency}
+\end{itemize}
+
+% ATS Keywords: Software Engineering, Full Stack Development, JavaScript, React, Object-Oriented Programming
+
+\end{document}

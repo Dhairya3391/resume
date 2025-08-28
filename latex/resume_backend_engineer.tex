@@ -1,0 +1,199 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Font setup - using standard LaTeX fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors - simplified for ATS
+\definecolor{primary}{RGB}{0, 0, 0}  % Black for ATS compatibility
+\definecolor{secondary}{RGB}{64, 64, 64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfborder={0 0 0}
+}
+
+% Section formatting - simplified
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands - simplified
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{6pt}
+    \small Rajkot, Gujarat, India | +91 9664847885 | dhairyaadroja3391@gmail.com \\
+    \small \href{https://linkedin.com/in/adroja-dhairya-203b85348}{LinkedIn} | \href{https://github.com/Dhairya3391}{GitHub} | \href{https://noobokay.me}{Portfolio}
+\end{center}
+
+% Summary
+\section{Summary}
+\begin{itemize}[leftmargin=*]
+\item Backend-focused Computer Science student with expertise in server-side development, API design, and database optimization. Proven experience building scalable backend systems with 99.8\% reliability. Passionate about creating robust, high-performance server architectures and microservices.
+\end{itemize}
+
+% Skills
+\section{Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Backend Technologies:} Node.js, Python Flask, ASP.NET, Express.js, REST APIs, GraphQL, Microservices
+\item \textbf{Programming Languages:} Python, JavaScript, TypeScript, Java, C\#, Rust, SQL
+\item \textbf{Databases:} MongoDB, PostgreSQL, MySQL, Redis, Database Design, Query Optimization
+\item \textbf{Server \& Infrastructure:} Linux, Docker, Nginx, Load Balancing, Caching, Message Queues
+\item \textbf{API Development:} RESTful Services, WebSocket, Authentication (JWT, OAuth), Rate Limiting
+\item \textbf{Tools \& Frameworks:} Git, Docker, CI/CD, Testing Frameworks, Performance Monitoring
+\end{itemize}
+
+% Projects
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Enterprise Chat Application Backend} | Node.js, MongoDB, WebSocket, JWT \\
+\href{https://github.com/Dhairya3391/chat-app-next}{GitHub} | \textit{Real-time Communication Server}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Architected scalable backend API supporting 100+ concurrent users with 99.8\% message delivery rate}
+\resumeItem{Designed secure authentication system with JWT tokens, session management, and role-based access control}
+\resumeItem{Implemented real-time WebSocket communication with connection pooling and automatic reconnection}
+\resumeItem{Optimized database queries and implemented caching strategies reducing API response time by 40\%}
+\resumeItem{Built comprehensive admin APIs with user management, analytics, and automated spam detection}
+\end{itemize}
+
+\item \textbf{CodeTrade - High-Performance Data Processing API} | Python, Flask, PostgreSQL \\
+\href{https://github.com/Shreyansh284/CodeTrade}{GitHub} | \textit{Financial Data Processing Backend}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developed high-throughput API processing 50,000+ data points with 95\% accuracy in pattern detection}
+\resumeItem{Implemented efficient data pipeline handling 1000+ files per hour with parallel processing}
+\resumeItem{Designed scalable architecture supporting 25+ concurrent API requests with load balancing}
+\resumeItem{Optimized database operations using indexing and query optimization, improving performance by 60\%}
+\resumeItem{Built robust error handling and logging system ensuring 99.9\% system reliability}
+\end{itemize}
+
+\item \textbf{Physics Simulation API Backend} | JavaScript, Node.js, WebGL Processing \\
+\href{https://github.com/Dhairya3391/MatterMind}{GitHub} | \textit{Real-time Physics Engine Server}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Created high-performance physics calculation engine processing 1000+ particles at 60 FPS}
+\resumeItem{Implemented efficient collision detection algorithms with spatial optimization achieving 95\% accuracy}
+\resumeItem{Designed modular API architecture allowing dynamic physics behavior configuration}
+\resumeItem{Optimized computational algorithms reducing server processing time by 40\%}
+\end{itemize}
+
+\item \textbf{Aarambh - Learning Platform Backend} | Node.js, Express.js, MongoDB, JWT \\
+\href{https://github.com/Dhairya3391}{GitHub} | \textit{Final Year Project - Educational API Services}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developing comprehensive REST API for learning management with course, user, and progress endpoints}
+\resumeItem{Implementing secure authentication and authorization system with role-based access control}
+\resumeItem{Building scalable database architecture with optimized queries supporting 500+ concurrent users}
+\resumeItem{Creating real-time notification system and file upload services with automated content validation}
+\end{itemize}
+
+\end{itemize}
+
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Teaching Assistant - Object Oriented Programming (Java)}{June 2025 -- Dec 2025}
+{Darshan University}{Rajkot, Gujarat}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Mentored 50+ students in Java backend development, API design patterns, and database integration}
+\resumeItem{Conducted practical sessions on RESTful API development and server-side programming concepts}
+\resumeItem{Developed backend coding exercises and project templates improving student understanding by 30\%}
+\resumeItem{Assisted in grading and code review processes, providing detailed feedback on backend implementations}
+\end{itemize}
+
+\resumeSubheading
+{Backend Developer (Personal Projects)}{2023 -- Present}
+{Full-Stack Application Development}{Remote}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Developed and maintained backend services for multiple applications serving 100+ users}
+\resumeItem{Implemented RESTful APIs with comprehensive documentation and automated testing}
+\resumeItem{Optimized database performance and implemented caching strategies for improved response times}
+\resumeItem{Designed secure authentication systems and implemented proper error handling and logging}
+\end{itemize}
+
+\resumeSubheading
+{Open Source Backend Contributor}{2023 -- Present}
+{Various Projects}{GitHub Community}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Contributed to 5+ open-source backend projects, focusing on API optimization and security improvements}
+\resumeItem{Implemented database optimizations and caching solutions across multiple repositories}
+\resumeItem{Collaborated with global development teams on backend architecture and best practices}
+\end{itemize}
+\end{itemize}
+
+% Technical Expertise
+\section{Technical Expertise}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{API Design:} RESTful services, GraphQL, WebSocket real-time communication, API versioning}
+\resumeItem{\textbf{Database Management:} Schema design, query optimization, indexing, data modeling, migrations}
+\resumeItem{\textbf{Performance Optimization:} Caching strategies, load balancing, database tuning, code profiling}
+\resumeItem{\textbf{Security:} Authentication, authorization, input validation, SQL injection prevention, data encryption}
+\resumeItem{\textbf{Testing:} Unit testing, integration testing, API testing, performance testing}
+\end{itemize}
+
+% Achievements
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+\resumeItem{* 1st Place Winner - CodeTrade Hackathon: Built scalable backend processing 50K+ data points (July 2025)}
+\resumeItem{* Multiicon Hackathon Winner - Secured internship opportunity through innovative backend architecture}
+\resumeItem{* Chess Champion - 1st Place Team Event, Runner-up Individual Competition demonstrating strategic thinking}
+\resumeItem{* Performance Expert: Achieved 40-60\% improvement in API response times across projects}
+\resumeItem{* Security Focus: Implemented secure authentication systems with zero security vulnerabilities}
+\end{itemize}
+
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Bachelor of Technology in Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot, Gujarat}{CGPA: 8.1/10}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Relevant Coursework: Data Structures, Algorithms, Database Systems, Computer Networks, System Design}
+\end{itemize}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Foundation: Programming Fundamentals, Database Management, Web Technologies, System Analysis}
+\end{itemize}
+\end{itemize}
+
+% Languages
+\section{Languages}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{English:} Professional proficiency}
+\resumeItem{\textbf{Hindi:} Native proficiency}
+\resumeItem{\textbf{Gujarati:} Native proficiency}
+\end{itemize}
+
+% ATS Keywords: Backend Development, REST API, Node.js, Database Design, Microservices
+
+\end{document}
