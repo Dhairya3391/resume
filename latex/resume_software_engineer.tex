@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=0.6in]{geometry}
 \usepackage{enumitem}
+\setlist[itemize]{itemsep=2pt, topsep=2pt}
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -51,65 +52,75 @@
     {\huge \textbf{Dhairya Adroja}} \\
     \vspace{6pt}
     \small Rajkot, Gujarat, India | +91 9664847885 | dhairyaadroja3391@gmail.com \\
-    \small \href{https://linkedin.com/in/adroja-dhairya-203b85348}{LinkedIn} | \href{https://github.com/Dhairya3391}{GitHub} | \href{https://noobokay.me}{Portfolio}
+    \small \href{https://www.linkedin.com/in/adrojadhairya}{LinkedIn} | \href{https://github.com/Dhairya3391}{GitHub} | \href{https://pow.noobokay.me}{Portfolio}
 \end{center}
 
-% Summary
-\section{Summary}
+% Career Objective
+\section{Career Objective}
 \begin{itemize}[leftmargin=*]
-\item Software Engineering student with expertise in full-stack development, embedded systems, and AI/ML. Proven track record of building scalable applications with 99.8\% reliability, winning hackathons, and contributing to open-source projects. Passionate about creating innovative solutions that solve real-world problems.
+\item To build a career as a software engineer focused on understanding systems deeply, writing practical and efficient code, and continuously improving through hands-on experimentation while contributing to reliable, real-world software.
 \end{itemize}
 
 % Skills
 \section{Skills}
 \begin{itemize}[leftmargin=*]
-\item \textbf{Programming Languages:} Python, JavaScript, TypeScript, Java, C\#, Rust, C/C++, SQL
-\item \textbf{Web Development:} React, Next.js, Node.js, HTML5, CSS3, RESTful APIs, WebSocket, Express.js
-\item \textbf{Software Engineering:} Object-Oriented Programming, Design Patterns, Data Structures, Algorithms
-\item \textbf{Databases:} MongoDB, PostgreSQL, MySQL, Redis
-\item \textbf{Tools \& Technologies:} Git, Docker, Linux, CI/CD, Jest, Webpack, Nginx
-\item \textbf{Frameworks:} Flask, ASP.NET, React Native, Vue.js
+\item \textbf{Primary Languages:} Python, JavaScript/TypeScript, C\#, Java
+\item \textbf{Working Knowledge:} Go, Rust, C/C++, SQL
+\item \textbf{Web Stack:} React, Next.js, Node.js, Elysia.js, Express.js, ASP.NET Web API, WebSocket
+\item \textbf{Engineering:} Object-Oriented Design, Data Structures, Algorithms, Design Patterns
+\item \textbf{AI/ML:} PyTorch, YOLOv11, ResNet, Computer Vision, Deep Learning
+\item \textbf{Databases \& Caching:} MongoDB, PostgreSQL, MySQL, Redis
+\item \textbf{DevOps \& Tools:} Git, Docker, Linux, CI/CD, Nginx
 \end{itemize}
 
 % Projects
-\section{Projects}
+\section{Key Projects}
 \begin{itemize}[leftmargin=*]
+
+\item \textbf{Wallyzer - AI Wallpaper Management System} | Python, PyTorch, Flask, Next.js \\
+\href{https://github.com/Dhairya3391/wallyzer}{GitHub} | \textit{Computer Vision and Deep Learning}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Built intelligent wallpaper management system using ResNet50 for feature extraction and perceptual hashing for duplicate detection}
+\resumeItem{Implemented AI-powered aesthetic scoring and K-means clustering for automatic categorization across large image collections}
+\resumeItem{Architected cross-platform ML inference supporting CPU, CUDA, and Apple Silicon (MPS) with automatic device selection}
+\resumeItem{Developed real-time web interface with Flask-SocketIO and Next.js for batch processing and live progress tracking}
+\resumeItem{Designed modular pipeline separating feature extraction, clustering, and inference to enable scalable experimentation and maintainability}
+\end{itemize}
 
 \item \textbf{Enterprise Chat Application} | Next.js, WebSocket, MongoDB, JWT \\
 \href{https://github.com/Dhairya3391/chat-app-next}{GitHub} | \textit{Real-time Communication Platform}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Architected scalable real-time chat application supporting 100+ concurrent users with 99.8\% message delivery rate}
-\resumeItem{Implemented secure JWT authentication system with role-based access control and 256-bit encryption}
-\resumeItem{Designed responsive UI/UX with React components, reducing load time by 40\% through code splitting}
-\resumeItem{Built comprehensive admin dashboard with user management and spam filtering achieving 99.5\% accuracy}
-\resumeItem{Deployed with automated CI/CD pipeline on Vercel with performance monitoring and error tracking}
+\resumeItem{Architected real-time chat system handling concurrent WebSocket connections with message persistence and delivery guarantees}
+\resumeItem{Implemented JWT-based authentication with role-based access control}
+\resumeItem{Designed secure session handling and encrypted message transport}
+\resumeItem{Built admin dashboard with user management, analytics, and content moderation using pattern-matching spam filters}
+\resumeItem{Deployed with MongoDB sharding strategy and Redis caching layer for horizontal scaling}
 \end{itemize}
 
-\item \textbf{CodeTrade - Financial Analysis Platform} | Python, NumPy, Pandas, Streamlit \\
-\href{https://github.com/Shreyansh284/CodeTrade}{GitHub} | \textit{Pattern Recognition System}
+\end{itemize}
+
+\section{Additional Projects}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Developed financial analysis platform processing 50,000+ data points with 95\% pattern detection accuracy}
-\resumeItem{Built dual-interface architecture supporting 25+ concurrent web users and CLI processing 1000+ files/hour}
-\resumeItem{Optimized algorithms using vectorized NumPy operations and intelligent caching, reducing computation time by 60\%}
-\resumeItem{Implemented robust error handling and data validation ensuring 99.9\% system reliability}
+
+\item \textbf{Plastic Detector - Deep Learning Vision System} | Python, YOLOv11, PyTorch \\
+\textit{Object Detection \& Computer Vision}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Built real-time plastic bag detection system using YOLOv11 architecture trained on custom annotated dataset}
+\resumeItem{Implemented end-to-end deep learning pipeline: data collection, annotation, augmentation, training (50+ epochs), and inference optimization}
 \end{itemize}
 
 \item \textbf{MatterMind - Physics Simulation Engine} | JavaScript, HTML5 Canvas, WebGL \\
 \href{https://github.com/Dhairya3391/MatterMind}{GitHub} | \href{https://matter-mind-aanocwu5z-dhairya3391s-projects.vercel.app/}{Live Demo}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Created interactive physics simulation engine handling 1000+ particles with consistent 60 FPS performance}
-\resumeItem{Implemented advanced collision detection algorithms with spatial partitioning achieving 95\% accuracy}
-\resumeItem{Optimized rendering pipeline using requestAnimationFrame and WebGL, improving performance by 40\%}
-\resumeItem{Designed modular architecture with plugin system for extensible physics behaviors}
+\resumeItem{Created interactive physics engine rendering 1000+ particles at 60 FPS using spatial partitioning for collision detection}
+\resumeItem{Optimized rendering pipeline with requestAnimationFrame and WebGL, reducing collision checks from O(n²) to near-linear time}
 \end{itemize}
 
 \item \textbf{Aarambh - Learning Management Platform} | React, Node.js, MongoDB, Express.js \\
-\href{https://github.com/Dhairya3391}{GitHub} | \textit{Final Year Project - Educational Technology}
+\href{https://github.com/Dhairya3391}{GitHub} | \textit{Final Year Project}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Developing comprehensive learning platform with course management, progress tracking, and interactive content}
-\resumeItem{Implementing responsive web design supporting multiple device types with optimized user experience}
-\resumeItem{Building scalable backend architecture with user authentication, role management, and content delivery}
-\resumeItem{Integrating real-time features for collaborative learning and instructor-student communication}
+\resumeItem{Developing full-stack learning platform with course management, progress tracking, and real-time collaboration features}
+\resumeItem{Building scalable REST API with JWT authentication, role-based authorization, and content delivery architecture}
 \end{itemize}
 
 \end{itemize}
@@ -118,33 +129,32 @@
 \section{Experience}
 \begin{itemize}[leftmargin=*]
 \resumeSubheading
-{Teaching Assistant - Object Oriented Programming (Java)}{June 2025 -- Dec 2025}
-{Darshan University}{Rajkot, Gujarat}
+{AI/ML Engineer Intern}{Sept 2025 -- Dec 2025}
+{Multiicon}{Onsite, Rajkot, Gujarat}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Assisted 50+ students in understanding OOP concepts, design patterns, and Java programming fundamentals}
-\resumeItem{Conducted lab sessions, code reviews, and debugging workshops improving student performance by 25\%}
-\resumeItem{Developed supplementary coding exercises and project templates for enhanced learning outcomes}
-\resumeItem{Mentored students on software development best practices and industry-standard coding conventions}
+\resumeItem{Built and deployed production event platform for Articon hackathon, handling 100+ live registrations with real-time tracking}
+\resumeItem{Integrated automated notification system using WhatsApp API and email services for participant communication workflow}
+\resumeItem{Engineered scalable architecture supporting concurrent user traffic during registration windows with zero downtime}
+\resumeItem{Delivered full-stack application from requirements to production deployment in a 6-week sprint under fixed event deadlines}
 \end{itemize}
 
 \resumeSubheading
 {Open Source Contributor}{2023 -- Present}
 {Various Projects}{GitHub Community}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Contributed 10+ merged pull requests across 5 open-source projects, improving code quality and functionality}
-\resumeItem{Collaborated with global development teams using Git workflows and code review processes}
-\resumeItem{Fixed critical bugs and implemented new features in JavaScript, Python, and TypeScript codebases}
+\resumeItem{Contributed 10+ merged pull requests across 5 repositories (500+ aggregated stars) in JavaScript, Python, and TypeScript}
+\resumeItem{Participated in distributed code review workflows, addressing maintainer feedback and following project contribution guidelines}
+\resumeItem{Fixed production bugs and implemented features in active codebases with existing user bases}
 \end{itemize}
 \end{itemize}
 
 % Achievements
 \section{Achievements}
 \begin{itemize}[leftmargin=*]
-\resumeItem{1st Place - CodeTrade Hackathon (30+ teams, July 2025)}
-\resumeItem{Multiicon Hackathon Winner: Secured internship through innovative project development}
-\resumeItem{Chess Champion: 1st Place Team Event, Runner-up Individual Competition}
-\resumeItem{Open Source: 10+ merged pull requests across 5 projects with 500+ aggregated stars}
-\resumeItem{Reliability: Achieved 99.8\% uptime across deployed applications}
+\resumeItem{\textbf{1st Place} - CodeTrade Hackathon (30+ competing teams, July 2025)}
+\resumeItem{\textbf{Multiicon Hackathon Winner:} Awarded AI/ML Engineer internship based on winning project}
+\resumeItem{\textbf{Open Source:} 10+ merged pull requests across 5 repositories with 500+ aggregated stars}
+\resumeItem{\textbf{Chess Champion:} 1st Place Team Event, Runner-up Individual Competition}
 \end{itemize}
 
 % Education
