@@ -1,0 +1,164 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=2pt, topsep=2pt}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Font setup - using standard LaTeX fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors - simplified for ATS
+\definecolor{primary}{RGB}{0, 0, 0}  % Black for ATS compatibility
+\definecolor{secondary}{RGB}{64, 64, 64}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    pdfborder={0 0 0}
+}
+
+% Section formatting - simplified
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands - simplified
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{6pt}
+    \small Rajkot, Gujarat, India | +91 9664847885 | dhairyaadroja3391@gmail.com \\
+    \small \href{https://www.linkedin.com/in/adrojadhairya}{LinkedIn} | \href{https://github.com/Dhairya3391}{GitHub} | \href{https://pow.noobokay.me}{Portfolio}
+\end{center}
+
+% Summary
+\section{Summary}
+\begin{itemize}[leftmargin=*]
+\item Software engineer focused on building reliable backend systems and understanding tradeoffs at the system level. Shipped production applications, scaled an event platform to 100+ concurrent users, and contributed to open source repositories with 10k+ stars. Currently working primarily with .NET.
+\end{itemize}
+
+% Skills
+\section{Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Core Backend:} C\#, ASP.NET Core (Web API, MVC), Entity Framework Core, ADO.NET, LINQ, SQL Server
+\item \textbf{Architecture:} REST API Design, Repository Pattern, Clean Architecture, Dependency Injection, JWT/RBAC
+\item \textbf{Databases:} SQL Server, PostgreSQL, MongoDB
+\item \textbf{Tooling:} Git, Docker, Swagger/OpenAPI, FluentValidation
+\item \textbf{Secondary:} Node.js, React, Python, Redis, Linux
+\end{itemize}
+
+% Projects
+\section{Key Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Aarambh - Learning Management Platform} | ASP.NET Core Web API, EF Core, SQL Server \\
+\href{https://github.com/Dhairya3391/Aarambh}{GitHub}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Built REST API with 20+ endpoints across 8 controllers (Users, Courses, Batches, Enrollments, Auth, Notifications)}
+\resumeItem{Implemented JWT authentication and RBAC securing endpoints for multi-role access (admin, instructor, student)}
+\resumeItem{Significantly reduced boilerplate by standardizing data access with Repository Pattern, AutoMapper DTOs, and FluentValidation}
+\resumeItem{Designed EF Core data model with proper relationships, migrations, and optimized LINQ projections}
+\end{itemize}
+
+\item \textbf{Quiz Application} | ASP.NET Core MVC, ADO.NET, SQL Server \\
+\href{https://github.com/Dhairya3391/QuizApplication}{GitHub}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Built admin dashboard managing quizzes, questions, difficulty levels, and users with full CRUD operations}
+\resumeItem{Wrote 10+ parameterized stored procedures for data access, avoiding raw SQL injection vulnerabilities}
+\resumeItem{Designed 6-table relational schema with proper foreign keys, session auth, and search with filtering}
+\resumeItem{Added Excel export (ClosedXML), analytics charts, and configured DI for all service dependencies}
+\end{itemize}
+
+\end{itemize}
+
+\section{Additional Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Wallyzer} | Python, PyTorch, Flask \\
+\href{https://github.com/Dhairya3391/wallyzer}{GitHub}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Built ML pipeline using ResNet50 for image feature extraction, perceptual hashing for deduplication, K-means for clustering}
+\resumeItem{Processed 1000+ images with cross-platform inference (CPU/CUDA/MPS) and Flask-SocketIO for real-time progress}
+\end{itemize}
+
+\item \textbf{Chat Application} | Next.js, WebSocket, MongoDB -- Real-time messaging with JWT auth and admin moderation
+\item \textbf{Physics Engine} | JavaScript, Canvas -- 1000+ particle simulation at 60 FPS with spatial partitioning | \href{https://matter-mind-aanocwu5z-dhairya3391s-projects.vercel.app/}{Live Demo}
+
+\end{itemize}
+
+% Experience
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{Software Engineer Intern}{Sept 2025 -- Dec 2025}
+{Multiicon}{Onsite, Rajkot, Gujarat}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Worked within production .NET codebase (Bonton platform) -- debugging issues, tracing request lifecycles, understanding enterprise data flows}
+\resumeItem{Built Articon event platform end-to-end: handled 100+ concurrent registrations during peak windows, zero downtime}
+\resumeItem{Integrated WhatsApp API + email notifications -- automated participant communication, reduced manual ops work}
+\resumeItem{Shipped to production in 6 weeks under fixed deadline with real users depending on it}
+\end{itemize}
+
+\resumeSubheading
+{Open Source Contributor}{2023 -- Present}
+{GitHub Community}{}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Regular contributor to a 10k+ star open-source repository with 10+ merged pull requests}
+\resumeItem{Collaborated with core maintainers through multi-round code reviews, addressing feedback and adhering to contribution standards}
+\resumeItem{Contributed bug fixes and feature enhancements across Bash, JavaScript, Python, and TypeScript codebases}
+\end{itemize}
+\end{itemize}
+
+% Achievements
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{1st Place} -- CodeTrade Hackathon (30+ teams, July 2025)}
+\resumeItem{\textbf{Hackathon Winner} -- Won Multiicon hackathon, awarded internship based on project}
+\resumeItem{\textbf{Open Source} -- Active contributor to high-visibility projects used by thousands of developers}
+\end{itemize}
+
+% Education
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\resumeSubheading
+{B.Tech in Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot}{CGPA: 8.1/10}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+\end{itemize}
+
+% Languages
+\section{Languages}
+\begin{itemize}[leftmargin=*]
+\resumeItem{\textbf{English:} Professional proficiency}
+\resumeItem{\textbf{Hindi:} Native proficiency}
+\resumeItem{\textbf{Gujarati:} Native proficiency}
+\end{itemize}
+
+\end{document}
