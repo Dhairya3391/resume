@@ -58,64 +58,18 @@
 % Summary
 \section{Summary}
 \begin{itemize}[leftmargin=*]
-\item Software engineer who enjoys digging into backend systems and understanding why things work the way they do. I like building APIs that are clean to use, databases that don't fall over, and code that the next person can actually read. Shipped a production event platform handling 100+ concurrent users with zero downtime, contributed to open source tools like \href{https://github.com/pystardust/ani-cli}{ani-cli} and \href{https://github.com/justchokingaround/lobster}{lobster}, and learned a lot by breaking things and fixing them. Currently focused on .NET—comfortable with ASP.NET Core, EF Core, and SQL Server, but always picking up whatever the problem needs.
+\item Software engineer who enjoys digging into backend systems and understanding why things work. I care about writing code that's readable, APIs that make sense, and systems that stay up. Shipped a production event platform under a fixed deadline with real users depending on it. Contributed to open source tools like \href{https://github.com/pystardust/ani-cli}{ani-cli} and \href{https://github.com/justchokingaround/lobster}{lobster}—learned a lot about working in distributed teams and navigating unfamiliar codebases. Currently focused on .NET (ASP.NET Core, EF Core, SQL Server) but comfortable picking up whatever the problem needs. Always curious about how things work under the hood.
 \end{itemize}
 
 % Skills
 \section{Skills}
 \begin{itemize}[leftmargin=*]
-\item \textbf{Languages:} C\#, Bash, Python, JavaScript/TypeScript, Java, SQL; familiar with Go and C
-\item \textbf{.NET:} ASP.NET Core (Web API, MVC), Entity Framework Core, LINQ
-\item \textbf{Architecture:} REST APIs, Repository Pattern, Dependency Injection, JWT auth
+\item \textbf{Languages:} Python, JavaScript/TypeScript, C\#, Java, Bash, SQL; familiar with Go and C
+\item \textbf{Backend:} ASP.NET Core (Web API, MVC), Entity Framework Core, Node.js, Express.js, Flask, REST APIs, WebSockets
+\item \textbf{Frontend:} React, Next.js, HTML/CSS, Tailwind
 \item \textbf{Databases:} SQL Server, PostgreSQL, MongoDB
-\item \textbf{Tools:} Git, Docker, Linux, Swagger
-\item \textbf{Also used:} Node.js, React, Flask, Redis
-\end{itemize}
-
-% Projects
-\section{Projects}
-\begin{itemize}[leftmargin=*]
-
-\item \textbf{Aarambh - Learning Management Platform} | ASP.NET Core Web API, EF Core, SQL Server \\
-\href{https://github.com/Dhairya3391/Aarambh}{GitHub}
-\begin{itemize}[leftmargin=*]
-\resumeItem{Learned: designing REST APIs in ASP.NET Core, structuring solutions with Clean Architecture and DI, securing endpoints with JWT and role-based authorization}
-\resumeItem{Practiced: EF Core modeling with relationships and migrations, writing efficient LINQ projections, reducing boilerplate via Repository Pattern, AutoMapper DTOs, and FluentValidation}
-\resumeItem{Gained understanding of middleware pipelines, exception handling strategies, and Swagger/OpenAPI documentation}
-\end{itemize}
-
-\item \textbf{Quiz Application} | ASP.NET Core MVC, ADO.NET, SQL Server \\
-\href{https://github.com/Dhairya3391/QuizApplication}{GitHub}
-\begin{itemize}[leftmargin=*]
-\resumeItem{Learned: ADO.NET with parameterized stored procedures, relational schema design with foreign keys, and defensive coding against SQL injection}
-\resumeItem{Practiced: MVC request lifecycle, dependency injection for services, session-based authentication, and search/filtering logic}
-\resumeItem{Explored: Excel export with ClosedXML, building analytics dashboards, and structuring multi-table queries}
-\end{itemize}
-
-\item \textbf{Wallyzer} | Python, PyTorch, Flask \\
-\href{https://github.com/Dhairya3391/wallyzer}{GitHub}
-\begin{itemize}[leftmargin=*]
-\resumeItem{Learned: building end-to-end ML pipelines—ResNet50 feature extraction, perceptual hashing for deduplication, K-means clustering}
-\resumeItem{Practiced: cross-platform inference optimization (CPU/CUDA/Apple MPS), automatic device selection, and batch processing}
-\resumeItem{Explored: real-time progress updates via Flask-SocketIO and structuring long-running background jobs}
-\end{itemize}
-
-\item \textbf{Chat Application} | Next.js, WebSocket, MongoDB \\
-\href{https://github.com/Dhairya3391/chat-app-next}{GitHub}
-\begin{itemize}[leftmargin=*]
-\resumeItem{Learned: WebSocket connection lifecycles, reconnection strategies, JWT-based authentication and session management}
-\resumeItem{Practiced: MongoDB schema design for messages/users, indexing for query performance, and role-based access control}
-\resumeItem{Explored: content moderation patterns, spam filtering, and building admin dashboards for user management}
-\end{itemize}
-
-\item \textbf{MatterMind - Physics Simulation Engine} | JavaScript, HTML5 Canvas \\
-\href{https://github.com/Dhairya3391/MatterMind}{GitHub} | \href{https://matter-mind-aanocwu5z-dhairya3391s-projects.vercel.app/}{Live Demo}
-\begin{itemize}[leftmargin=*]
-\resumeItem{Learned: spatial partitioning algorithms for collision detection, reducing complexity from O(n²) to near-linear}
-\resumeItem{Practiced: requestAnimationFrame render loops, profiling with browser DevTools, and memory optimization}
-\resumeItem{Explored: physics math (velocity, acceleration, elasticity) and interactive parameter tuning}
-\end{itemize}
-
+\item \textbf{Tools:} Git, Docker, Linux, Swagger/OpenAPI
+\item \textbf{Concepts:} REST API design, authentication (JWT, sessions), dependency injection, repository pattern
 \end{itemize}
 
 % Experience
@@ -125,7 +79,7 @@
 {Software Engineer Intern}{Sept 2025 -- Dec 2025}
 {Multiicon}{Onsite, Rajkot, Gujarat}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Worked within production .NET codebase (Bonton platform) -- debugging issues, tracing request lifecycles, understanding enterprise data flows}
+\resumeItem{Contributed to production .NET codebase (Bonton platform) -- debugging issues, tracing request lifecycles, understanding enterprise data flows}
 \resumeItem{Built Articon event platform end-to-end: handled 100+ concurrent registrations during peak windows, zero downtime}
 \resumeItem{Integrated WhatsApp API + email notifications -- automated participant communication, reduced manual ops work}
 \resumeItem{Shipped to production in 6 weeks under fixed deadline with real users depending on it}
@@ -142,12 +96,64 @@
 \end{itemize}
 \end{itemize}
 
+% Projects
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Aarambh - Learning Management Platform} | ASP.NET Core Web API, EF Core, SQL Server \\
+\href{https://github.com/Dhairya3391/Aarambh}{GitHub}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Learned: designing REST APIs in ASP.NET Core, structuring with DI, securing endpoints with JWT and role-based authentication}
+\resumeItem{Practiced: EF Core modeling with relationships/migrations, LINQ projections, Repository Pattern, AutoMapper DTOs}
+\resumeItem{Built: user management, course enrollment, batch scheduling, and notification modules with proper error handling}
+\resumeItem{Explored: middleware pipelines, global exception handling, and generating Swagger docs for API consumers}
+\end{itemize}
+
+\item \textbf{Quiz Application} | ASP.NET Core MVC, ADO.NET, SQL Server \\
+\href{https://github.com/Dhairya3391/QuizApplication}{GitHub}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Built admin dashboard with full CRUD for quizzes, questions, users, and difficulty levels}
+\resumeItem{Designed 6-table relational schema with foreign keys; wrote parameterized stored procedures for all data access}
+\resumeItem{Implemented session-based authentication, search/filtering, and pagination for large datasets}
+\resumeItem{Added Excel export (ClosedXML), analytics charts, and configured DI for service dependencies}
+\end{itemize}
+
+\item \textbf{Wallyzer} | Python, PyTorch, Flask, Next.js \\
+\href{https://github.com/Dhairya3391/wallyzer}{GitHub}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Learned: end-to-end ML pipelines—ResNet50 feature extraction, perceptual hashing for deduplication, K-means clustering}
+\resumeItem{Practiced: cross-platform inference optimization (CPU/CUDA/Apple MPS), automatic device selection, batch processing}
+\resumeItem{Built: Flask backend with SocketIO for real-time progress updates; Next.js frontend for browsing results}
+\resumeItem{Processed 1000+ images with duplicate detection and automatic categorization into visual clusters}
+\end{itemize}
+
+\item \textbf{Chat Application} | Next.js, WebSocket, MongoDB \\
+\href{https://github.com/Dhairya3391/chat-app-next}{GitHub}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Implemented real-time messaging with WebSocket connection handling, reconnection strategies, and heartbeat}
+\resumeItem{Built JWT-based authentication with refresh tokens, session management, and role-based access control}
+\resumeItem{Designed MongoDB schema for messages/users with compound indexes for query performance}
+\resumeItem{Created admin dashboard with user management, message analytics, and content moderation tools}
+\end{itemize}
+
+\item \textbf{MatterMind - Physics Simulation Engine} | JavaScript, HTML5 Canvas \\
+\href{https://github.com/Dhairya3391/MatterMind}{GitHub} | \href{https://matter-mind-aanocwu5z-dhairya3391s-projects.vercel.app/}{Live Demo}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Optimized collision detection with spatial partitioning (grid-based), reducing O(n²) to near-linear complexity}
+\resumeItem{Built interactive physics sandbox running 1000+ particles at 60 FPS with requestAnimationFrame}
+\resumeItem{Implemented physics math: velocity, acceleration, elasticity, friction, and boundary handling}
+\resumeItem{Profiled with browser DevTools to identify bottlenecks; optimized memory allocation and render loops}
+\end{itemize}
+
+\end{itemize}
+
 % Achievements
 \section{Achievements}
 \begin{itemize}[leftmargin=*]
-\resumeItem{\textbf{1st Place} -- CodeTrade Hackathon (30+ teams, July 2025)}
-\resumeItem{\textbf{Hackathon Winner} -- Won Multiicon hackathon, awarded internship based on project}
-\resumeItem{\textbf{Open Source} -- Active contributor to high-visibility projects used by thousands of developers}
+\resumeItem{\textbf{1st Place} -- CodeTrade Hackathon (30+ teams, July 2025) -- built pattern recognition system processing 50k+ data points}
+\resumeItem{\textbf{Hackathon Winner} -- Won Multiicon hackathon; awarded internship based on project quality}
+\resumeItem{\textbf{Open Source} -- 10+ merged PRs to ani-cli, lobster, and other projects used by thousands of developers}
+\resumeItem{\textbf{Chess} -- 1st Place Team Event, Runner-up Individual Competition at university level}
 \end{itemize}
 
 % Education
@@ -156,10 +162,17 @@
 \resumeSubheading
 {B.Tech in Computer Science and Engineering}{Expected May 2027}
 {Darshan University, Rajkot}{CGPA: 8.1/10}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Relevant Coursework: Data Structures, Algorithms, Database Systems, Computer Networks, Operating Systems, OOP}
+\resumeItem{Teaching Assistant for Object-Oriented Programming (Java) -- mentored 50+ students, conducted practical sessions}
+\end{itemize}
 
 \resumeSubheading
 {Diploma in Computer Science and Engineering}{May 2023}
 {Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Foundation: Programming Fundamentals, Web Development, Database Management, System Analysis}
+\end{itemize}
 \end{itemize}
 
 % Languages
