@@ -58,55 +58,63 @@
 % Summary
 \section{Summary}
 \begin{itemize}[leftmargin=*]
-\item Software engineer focused on building reliable backend systems and understanding tradeoffs at the system level. Shipped production applications, scaled an event platform to 100+ concurrent users, and contributed to open source repositories with 10k+ stars. Currently working primarily with .NET.
+\item Software engineer who enjoys digging into backend systems and understanding why things work the way they do. I like building APIs that are clean to use, databases that don't fall over, and code that the next person can actually read. Shipped a production event platform handling 100+ concurrent users with zero downtime, contributed to open source tools like \href{https://github.com/pystardust/ani-cli}{ani-cli} and \href{https://github.com/justchokingaround/lobster}{lobster}, and learned a lot by breaking things and fixing them. Currently focused on .NET—comfortable with ASP.NET Core, EF Core, and SQL Server, but always picking up whatever the problem needs.
 \end{itemize}
 
 % Skills
 \section{Skills}
 \begin{itemize}[leftmargin=*]
-\item \textbf{Core Backend:} C\#, ASP.NET Core (Web API, MVC), Entity Framework Core, ADO.NET, LINQ, SQL Server
-\item \textbf{Architecture:} REST API Design, Repository Pattern, Clean Architecture, Dependency Injection, JWT/RBAC
+\item \textbf{Languages:} C\#, Bash, Python, JavaScript/TypeScript, Java, SQL; familiar with Go and C
+\item \textbf{.NET:} ASP.NET Core (Web API, MVC), Entity Framework Core, LINQ
+\item \textbf{Architecture:} REST APIs, Repository Pattern, Dependency Injection, JWT auth
 \item \textbf{Databases:} SQL Server, PostgreSQL, MongoDB
-\item \textbf{Tooling:} Git, Docker, Swagger/OpenAPI, FluentValidation
-\item \textbf{Secondary:} Node.js, React, Python, Redis, Linux
+\item \textbf{Tools:} Git, Docker, Linux, Swagger
+\item \textbf{Also used:} Node.js, React, Flask, Redis
 \end{itemize}
 
 % Projects
-\section{Key Projects}
+\section{Projects}
 \begin{itemize}[leftmargin=*]
 
 \item \textbf{Aarambh - Learning Management Platform} | ASP.NET Core Web API, EF Core, SQL Server \\
 \href{https://github.com/Dhairya3391/Aarambh}{GitHub}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Built REST API with 20+ endpoints across 8 controllers (Users, Courses, Batches, Enrollments, Auth, Notifications)}
-\resumeItem{Implemented JWT authentication and RBAC securing endpoints for multi-role access (admin, instructor, student)}
-\resumeItem{Significantly reduced boilerplate by standardizing data access with Repository Pattern, AutoMapper DTOs, and FluentValidation}
-\resumeItem{Designed EF Core data model with proper relationships, migrations, and optimized LINQ projections}
+\resumeItem{Learned: designing REST APIs in ASP.NET Core, structuring solutions with Clean Architecture and DI, securing endpoints with JWT and role-based authorization}
+\resumeItem{Practiced: EF Core modeling with relationships and migrations, writing efficient LINQ projections, reducing boilerplate via Repository Pattern, AutoMapper DTOs, and FluentValidation}
+\resumeItem{Gained understanding of middleware pipelines, exception handling strategies, and Swagger/OpenAPI documentation}
 \end{itemize}
 
 \item \textbf{Quiz Application} | ASP.NET Core MVC, ADO.NET, SQL Server \\
 \href{https://github.com/Dhairya3391/QuizApplication}{GitHub}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Built admin dashboard managing quizzes, questions, difficulty levels, and users with full CRUD operations}
-\resumeItem{Wrote 10+ parameterized stored procedures for data access, avoiding raw SQL injection vulnerabilities}
-\resumeItem{Designed 6-table relational schema with proper foreign keys, session auth, and search with filtering}
-\resumeItem{Added Excel export (ClosedXML), analytics charts, and configured DI for all service dependencies}
+\resumeItem{Learned: ADO.NET with parameterized stored procedures, relational schema design with foreign keys, and defensive coding against SQL injection}
+\resumeItem{Practiced: MVC request lifecycle, dependency injection for services, session-based authentication, and search/filtering logic}
+\resumeItem{Explored: Excel export with ClosedXML, building analytics dashboards, and structuring multi-table queries}
 \end{itemize}
-
-\end{itemize}
-
-\section{Additional Projects}
-\begin{itemize}[leftmargin=*]
 
 \item \textbf{Wallyzer} | Python, PyTorch, Flask \\
 \href{https://github.com/Dhairya3391/wallyzer}{GitHub}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Built ML pipeline using ResNet50 for image feature extraction, perceptual hashing for deduplication, K-means for clustering}
-\resumeItem{Processed 1000+ images with cross-platform inference (CPU/CUDA/MPS) and Flask-SocketIO for real-time progress}
+\resumeItem{Learned: building end-to-end ML pipelines—ResNet50 feature extraction, perceptual hashing for deduplication, K-means clustering}
+\resumeItem{Practiced: cross-platform inference optimization (CPU/CUDA/Apple MPS), automatic device selection, and batch processing}
+\resumeItem{Explored: real-time progress updates via Flask-SocketIO and structuring long-running background jobs}
 \end{itemize}
 
-\item \textbf{Chat Application} | Next.js, WebSocket, MongoDB -- Real-time messaging with JWT auth and admin moderation
-\item \textbf{Physics Engine} | JavaScript, Canvas -- 1000+ particle simulation at 60 FPS with spatial partitioning | \href{https://matter-mind-aanocwu5z-dhairya3391s-projects.vercel.app/}{Live Demo}
+\item \textbf{Chat Application} | Next.js, WebSocket, MongoDB \\
+\href{https://github.com/Dhairya3391/chat-app-next}{GitHub}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Learned: WebSocket connection lifecycles, reconnection strategies, JWT-based authentication and session management}
+\resumeItem{Practiced: MongoDB schema design for messages/users, indexing for query performance, and role-based access control}
+\resumeItem{Explored: content moderation patterns, spam filtering, and building admin dashboards for user management}
+\end{itemize}
+
+\item \textbf{MatterMind - Physics Simulation Engine} | JavaScript, HTML5 Canvas \\
+\href{https://github.com/Dhairya3391/MatterMind}{GitHub} | \href{https://matter-mind-aanocwu5z-dhairya3391s-projects.vercel.app/}{Live Demo}
+\begin{itemize}[leftmargin=*]
+\resumeItem{Learned: spatial partitioning algorithms for collision detection, reducing complexity from O(n²) to near-linear}
+\resumeItem{Practiced: requestAnimationFrame render loops, profiling with browser DevTools, and memory optimization}
+\resumeItem{Explored: physics math (velocity, acceleration, elasticity) and interactive parameter tuning}
+\end{itemize}
 
 \end{itemize}
 
@@ -127,9 +135,10 @@
 {Open Source Contributor}{2023 -- Present}
 {GitHub Community}{}
 \begin{itemize}[leftmargin=*]
-\resumeItem{Regular contributor to a 10k+ star open-source repository with 10+ merged pull requests}
-\resumeItem{Collaborated with core maintainers through multi-round code reviews, addressing feedback and adhering to contribution standards}
-\resumeItem{Contributed bug fixes and feature enhancements across Bash, JavaScript, Python, and TypeScript codebases}
+\resumeItem{Contributor to \href{https://github.com/pystardust/ani-cli}{ani-cli} (widely-used CLI streaming tool) and \href{https://github.com/justchokingaround/lobster}{lobster} with 10+ merged pull requests}
+\resumeItem{Collaborated with maintainers through multi-round code reviews, addressing feedback and adhering to contribution guidelines}
+\resumeItem{Contributed bug fixes, feature enhancements, and documentation improvements across Bash, JavaScript, Python, and TypeScript}
+\resumeItem{Gained experience reading unfamiliar codebases, writing maintainable patches, and navigating async review workflows}
 \end{itemize}
 \end{itemize}
 
