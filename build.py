@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate resume LaTeX files and compile PDFs into ./pdfs/{single_page,two_page}."""
+"""Validate resume LaTeX files and compile PDFs into ./pdfs/{sde,backend,ai_ml_engineer}."""
 
 from __future__ import annotations
 
@@ -11,12 +11,9 @@ import sys
 from pathlib import Path
 from typing import Dict, List, Optional
 
-
 REPO_ROOT = Path(__file__).resolve().parent
 LATEX_DIR = REPO_ROOT / "latex"
 PDF_DIR = REPO_ROOT / "pdfs"
-SINGLE_PAGE_DIRNAME = "single_page"
-TWO_PAGE_DIRNAME = "two_page"
 
 TARGET_FILES = [
     "resume_sde.tex",
@@ -38,9 +35,9 @@ REQUIRED_GLOBAL_STRINGS = [
 ]
 
 REQUIRED_HEADER_LINKS = [
-    r"\href{https://www.linkedin.com/in/adrojadhairya}{www.linkedin.com/in/adrojadhairya}",
-    r"\href{https://www.github.com/Dhairya3391}{www.github.com/Dhairya3391}",
-    r"\href{https://pow.noobokay.me}{pow.noobokay.me}",
+    r"\href{https://www.linkedin.com/in/adrojadhairya}{LinkedIn}",
+    r"\href{https://www.github.com/Dhairya3391}{GitHub}",
+    r"\href{https://dhairya.codes}{Portfolio}",
 ]
 
 FORBIDDEN_STRINGS = [
@@ -140,9 +137,25 @@ def expected_page_count(tex_name: str) -> int:
     return 2 if tex_name.endswith("_2page.tex") else 1
 
 
+def extract_resume_type(tex_name: str) -> str:
+    """Extract resume type from filename.
+
+    Examples:
+    - resume_sde.tex -> sde
+    - resume_sde_2page.tex -> sde
+    - resume_backend.tex -> backend
+    - resume_ai_ml_engineer_2page.tex -> ai_ml_engineer
+    """
+    # Remove 'resume_' prefix and '.tex' suffix
+    name = tex_name.replace("resume_", "").replace(".tex", "")
+    # Remove '_2page' suffix if present
+    name = name.replace("_2page", "")
+    return name
+
+
 def output_subdir_for(tex_name: str) -> Path:
-    dirname = TWO_PAGE_DIRNAME if expected_page_count(tex_name) == 2 else SINGLE_PAGE_DIRNAME
-    return PDF_DIR / dirname
+    resume_type = extract_resume_type(tex_name)
+    return PDF_DIR / resume_type
 
 
 def output_pdf_path_for(tex_name: str) -> Path:
@@ -159,7 +172,10 @@ def cleanup_aux_files(output_dir: Path) -> None:
 
 def cleanup_target_pdfs() -> None:
     target_pdf_names = {Path(name).with_suffix(".pdf").name for name in TARGET_FILES}
-    candidate_dirs = [PDF_DIR, PDF_DIR / SINGLE_PAGE_DIRNAME, PDF_DIR / TWO_PAGE_DIRNAME]
+    # Get all resume type directories
+    resume_types = {extract_resume_type(name) for name in TARGET_FILES}
+    candidate_dirs = [PDF_DIR] + [PDF_DIR / resume_type for resume_type in resume_types]
+
     for directory in candidate_dirs:
         if not directory.exists():
             continue
@@ -232,12 +248,15 @@ def main() -> int:
         return 1
     print("Source validation passed.")
 
+    # Create output directories by resume type
     PDF_DIR.mkdir(parents=True, exist_ok=True)
-    (PDF_DIR / SINGLE_PAGE_DIRNAME).mkdir(parents=True, exist_ok=True)
-    (PDF_DIR / TWO_PAGE_DIRNAME).mkdir(parents=True, exist_ok=True)
+    resume_types = {extract_resume_type(name) for name in TARGET_FILES}
+    for resume_type in sorted(resume_types):
+        (PDF_DIR / resume_type).mkdir(parents=True, exist_ok=True)
+
     print(f"Compiling PDFs into: {PDF_DIR}")
-    print(f"  - 1-page output: {PDF_DIR / SINGLE_PAGE_DIRNAME}")
-    print(f"  - 2-page output: {PDF_DIR / TWO_PAGE_DIRNAME}")
+    for resume_type in sorted(resume_types):
+        print(f"  - {resume_type}: {PDF_DIR / resume_type}")
 
     if shutil.which("pdflatex") is None:
         print("pdflatex not found in PATH. Install a TeX distribution and rerun.")
