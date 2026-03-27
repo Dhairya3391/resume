@@ -1,0 +1,151 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=1pt, topsep=1pt}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+\pagestyle{empty}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{8pt}
+    \small Rajkot, Gujarat, India \textbar{} 9664847885 \textbar{} dhairyaadroja3391@gmail.com \\
+    \small
+    \href{https://www.linkedin.com/in/adrojadhairya}{www.linkedin.com/in/adrojadhairya} \textbar{}
+    \href{https://www.github.com/Dhairya3391}{www.github.com/Dhairya3391} \textbar{}
+    \href{https://pow.noobokay.me}{pow.noobokay.me}
+\end{center}
+
+\section{Objective}
+\noindent Software developer focused on clean, maintainable systems and practical problem-solving across backend, frontend, and AI-enabled workflows.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{Languages:} C\#, Java, TypeScript, JavaScript, Python, SQL, NoSQL}
+  \resumeItem{\textbf{Backend:} ASP.NET Core, .NET 10 Microservices, FastAPI, Flask, Node.js, Express}
+  \resumeItem{\textbf{Frontend:} Next.js, React, SvelteKit}
+  \resumeItem{\textbf{Data \& Messaging:} SQL Server, PostgreSQL, SQLite, Redis, RabbitMQ, EF Core}
+  \resumeItem{\textbf{AI \& Runtime:} PyTorch, scikit-learn, OpenCV, SignalR, Hangfire, Docker, Linux, Git, GitHub}
+  \resumeItem{\textbf{Design:} OOP, SOLID, Repository Pattern, Layered Architecture, REST API Design, Middleware, Async Processing}
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+
+\resumeSubheading
+{Software Engineer Intern}{2024 -- Present}
+{Multiicon}{Remote / Gujarat, India}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Selected after winning Multiicon Hackathon among 50+ teams}
+  \resumeItem{Worked on the Bonton project as an SDE, shipping feature implementations across application modules}
+  \resumeItem{Performed feature analysis and requirement breakdown before development and integration}
+  \resumeItem{Collaborated with teammates on API integration, testing passes, and release-ready refinements}
+\end{itemize}
+
+\end{itemize}
+
+\section{Selected Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Continuum --- Personal Universe Simulator} \\
+\textit{.NET 10, Microservices, RabbitMQ, Redis, SignalR, Hangfire} \\
+\href{https://github.com/Dhairya3391/continuum}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Developed distributed architecture with six backend services and shared contracts/models}
+  \resumeItem{Implemented RabbitMQ event publishing/subscribing with fallback mode for broker outages}
+  \resumeItem{Added SignalR feed streaming, Hangfire recurring jobs, Redis cache integration, and JWT auth}
+  \resumeItem{Maintained service routes for auth, particle lifecycle, simulation state, and visualization metadata}
+\end{itemize}
+
+\item \textbf{Wallyzer --- AI Wallpaper Analyzer} \\
+\textit{Flask, PyTorch, scikit-learn, Next.js} \\
+\href{https://github.com/Dhairya3391/wallyzer}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built analysis pipeline combining EfficientNet/ResNet features and similarity scoring}
+  \resumeItem{Implemented clustering and duplicate-discovery APIs with cache-backed re-analysis workflows}
+  \resumeItem{Integrated backend response shapes with Next.js frontend for cluster and duplicate exploration}
+\end{itemize}
+
+\item \textbf{Aarambh --- Learning Management System} \\
+\textit{ASP.NET Core (.NET 8), EF Core, SQL Server, Next.js, TypeScript} \\
+\href{https://github.com/Dhairya3391/Aarambh}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built full-stack LMS with .NET backend and Next.js frontend}
+  \resumeItem{Implemented 12 controllers and 76 route handlers across auth, users, courses, chapters, and enrollment}
+  \resumeItem{Integrated JWT auth, FluentValidation, AutoMapper, global exception middleware, and EF migrations}
+\end{itemize}
+
+\item \textbf{DevAuth --- Dev Recruitment Platform} \\
+\textit{TypeScript, Express, PostgreSQL, Redis} \\
+\href{https://github.com/Dhairya3391/devAuth}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built multi-service backend including integration, analysis, ML, and worker services}
+  \resumeItem{Implemented auth, repository, analysis, candidate, and pipeline routes with middleware and rate limiting}
+\end{itemize}
+
+\end{itemize}
+
+\section{Additional Projects}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{SecureAttend} --- Built FastAPI-based face-recognition attendance backend with camera, user, attendance, and auth routes. \href{https://github.com/Dhairya3391/SecureAttend}{GitHub}}
+  \resumeItem{\textbf{EduBrief} --- Built Python tool to convert syllabus PDFs into timelines, MCQs, projects, and lab practicals using OpenAI/Gemini provider fallback. \href{https://github.com/Dhairya3391/EduBrief}{GitHub}}
+  \resumeItem{\textbf{Chat App (Next.js + Socket.IO)} --- Implemented real-time messaging and moderation workflows with persistent IP-ban state. \href{https://github.com/Dhairya3391/chat-app-next}{GitHub}}
+  \resumeItem{\textbf{Cardiovascular Disease Detector Backend} --- Built FastAPI prediction service backed by a Random Forest model with engineered clinical features and typed request validation. \href{https://github.com/Dhairya3391/Cardiovascular-Disease-Detector-Backend}{GitHub}}
+\end{itemize}
+
+\section{Open Source}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{ani-cli Contributor (11.8k+ stars)} --- Contributed fixes for iina next-button flow and Steam Deck patch URL handling. \href{https://github.com/pystardust/ani-cli}{Upstream} \textbar{} \href{https://github.com/Dhairya3391/ani-cli}{Fork}}
+\end{itemize}
+
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{Multiicon Hackathon Winner} --- 1st place among 50+ teams; secured internship opportunity}
+  \resumeItem{\textbf{University Chess Gold Medalist; AIU Inter-University Participant}}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=*]
+
+\resumeSubheading
+{Bachelor of Technology --- Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot, Gujarat}{CGPA: 8.68/10}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+
+\end{itemize}
+
+\end{document}

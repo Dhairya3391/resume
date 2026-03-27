@@ -1,0 +1,166 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=1pt, topsep=1pt}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+\pagestyle{empty}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{8pt}
+    \small Rajkot, Gujarat, India \textbar{} 9664847885 \textbar{} dhairyaadroja3391@gmail.com \\
+    \small
+    \href{https://www.linkedin.com/in/adrojadhairya}{www.linkedin.com/in/adrojadhairya} \textbar{}
+    \href{https://www.github.com/Dhairya3391}{www.github.com/Dhairya3391} \textbar{}
+    \href{https://pow.noobokay.me}{pow.noobokay.me}
+\end{center}
+
+\section{Objective}
+\noindent AI/ML developer focused on working with data and building practical AI features for production products.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{Languages:} Python, Java, TypeScript, JavaScript, C\#, SQL, NoSQL}
+  \resumeItem{\textbf{ML \& CV:} scikit-learn, PyTorch, torchvision, OpenCV, NumPy, pandas, SciPy}
+  \resumeItem{\textbf{Frameworks:} FastAPI, Flask, Streamlit, Next.js}
+  \resumeItem{\textbf{LLM APIs:} OpenAI API, Anthropic API, Gemini API}
+  \resumeItem{\textbf{Techniques:} Feature engineering, clustering, similarity search, model serving, prompt workflows}
+  \resumeItem{\textbf{Tools:} Docker, Git, GitHub, Linux, Plotly, Roboflow Inference SDK}
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+
+\resumeSubheading
+{Software Engineer Intern}{2024 -- Present}
+{Multiicon}{Remote / Gujarat, India}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Selected after winning Multiicon Hackathon among 50+ teams}
+  \resumeItem{Implemented an MCP server for internal site/data workflows to expose structured tools and actions}
+  \resumeItem{Worked on auto-generated report pipeline from business data for repeatable report output}
+  \resumeItem{Collaborated with product/dev teams on prompt structure and output schema refinement}
+\end{itemize}
+
+\end{itemize}
+
+\section{Selected AI/ML Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{SecureAttend --- Face Recognition Attendance System} \\
+\textit{FastAPI, OpenCV, face\_recognition, SQLite, Docker} \\
+\href{https://github.com/Dhairya3391/SecureAttend}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built FastAPI backend with camera-control, user management, attendance reporting, and CSV export routes}
+  \resumeItem{Implemented 45 API routes across users, attendance, camera, and authentication modules}
+  \resumeItem{Integrated face-encoding recognition pipeline and persistent attendance logging with SQLite}
+\end{itemize}
+
+\item \textbf{EduBrief} \\
+\textit{Python, OpenAI API, Gemini API, PDF Processing, Jinja Templates} \\
+\href{https://github.com/Dhairya3391/EduBrief}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built tool to convert syllabus PDFs into timeline, MCQ bank, project ideas, and lab practicals}
+  \resumeItem{Implemented provider fallback between Gemini and OpenAI with retry/timeout handling}
+  \resumeItem{Used threaded generation and template rendering for concurrent multi-output generation}
+\end{itemize}
+
+\item \textbf{Wallyzer --- AI Wallpaper Analyzer} \\
+\textit{Python, Flask, PyTorch, scikit-learn, Next.js} \\
+\href{https://github.com/Dhairya3391/wallyzer}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built analysis pipeline using EfficientNet embeddings and ResNet-based aesthetic scoring}
+  \resumeItem{Implemented duplicate detection with embedding features and cosine-similarity matching}
+  \resumeItem{Added KMeans clustering with cache-backed re-analysis and frontend integration}
+\end{itemize}
+
+\item \textbf{Plastic Bag Detector} \\
+\textit{Python, OpenCV, Roboflow Inference SDK, NumPy} \\
+\href{https://github.com/Dhairya3391/plastic-detector}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Implemented image/video/webcam detection flows with real-time overlay rendering}
+  \resumeItem{Built threaded inference loop to keep frame capture responsive during model inference}
+  \resumeItem{Added confidence-threshold controls and media export for review/testing}
+\end{itemize}
+
+\item \textbf{Cardiovascular Disease Detector Backend} \\
+\textit{Python, scikit-learn, FastAPI, Pydantic, Docker} \\
+\href{https://github.com/Dhairya3391/Cardiovascular-Disease-Detector-Backend}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Trained Random Forest model with engineered features including BMI, age-group, BP category, and pulse pressure}
+  \resumeItem{Exposed prediction endpoint with probability output and risk-level mapping}
+  \resumeItem{Built request validation and deployment-ready runtime with Docker/Uvicorn}
+\end{itemize}
+
+\item \textbf{Stock Pattern Scanner} \\
+\textit{Python, Streamlit, scikit-learn, Plotly, yfinance} \\
+\href{https://github.com/Dhairya3391/stock-pattern-scanner}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Implemented pattern detection logic for Head \& Shoulders, Double Bottom/Top, and Cup \& Handle}
+  \resumeItem{Integrated lightweight ML validation using Random Forest, SVM, and Isolation Forest models}
+  \resumeItem{Built Streamlit workflows for scanning symbols and reviewing chart-based detections}
+\end{itemize}
+
+\end{itemize}
+
+\section{Additional Project}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{MLDL Coursework Repository} --- Implemented ML lab workflows across regression/classification tasks with preprocessing and evaluation pipelines. \href{https://github.com/Dhairya3391/MLDL}{GitHub}}
+\end{itemize}
+
+\section{Open Source}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{ani-cli Contributor (11.8k+ stars)} --- Contributed fixes for iina next-button flow and Steam Deck patch URL handling. \href{https://github.com/pystardust/ani-cli}{Upstream} \textbar{} \href{https://github.com/Dhairya3391/ani-cli}{Fork}}
+\end{itemize}
+
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{Multiicon Hackathon Winner} --- 1st place among 50+ teams; secured internship opportunity}
+  \resumeItem{\textbf{University Chess Gold Medalist; AIU Inter-University Participant}}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=*]
+
+\resumeSubheading
+{Bachelor of Technology --- Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot, Gujarat}{CGPA: 8.68/10}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+
+\end{itemize}
+
+\end{document}

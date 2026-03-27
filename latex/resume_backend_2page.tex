@@ -1,0 +1,158 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=1pt, topsep=1pt}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}{0em}{}
+[\titlerule]
+
+\titlespacing{\section}{0pt}{10pt}{6pt}
+\pagestyle{empty}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-1pt}}
+}
+
+\begin{document}
+
+\begin{center}
+    {\huge \textbf{Dhairya Adroja}} \\
+    \vspace{8pt}
+    \small Rajkot, Gujarat, India \textbar{} 9664847885 \textbar{} dhairyaadroja3391@gmail.com \\
+    \small
+    \href{https://www.linkedin.com/in/adrojadhairya}{www.linkedin.com/in/adrojadhairya} \textbar{}
+    \href{https://www.github.com/Dhairya3391}{www.github.com/Dhairya3391} \textbar{}
+    \href{https://pow.noobokay.me}{pow.noobokay.me}
+\end{center}
+
+\section{Objective}
+\noindent Backend developer focused on building structured, maintainable systems with clear API design and strong authentication practices.
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{Languages:} C\#, Java, TypeScript, JavaScript, Python, SQL, NoSQL}
+  \resumeItem{\textbf{Backend Frameworks:} ASP.NET Core, .NET 10, FastAPI, Flask, Node.js, Express}
+  \resumeItem{\textbf{Data Layer:} SQL Server, PostgreSQL, SQLite, Redis, NoSQL, EF Core}
+  \resumeItem{\textbf{Architecture \& Runtime:} Microservices, REST APIs, JWT, RBAC, RabbitMQ, SignalR, Hangfire}
+  \resumeItem{\textbf{Design:} OOP, SOLID, Repository Pattern, Layered Architecture, REST API Design, Middleware, Async Processing}
+  \resumeItem{\textbf{Tooling:} Docker, Swagger/OpenAPI, Git, GitHub, Linux}
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=*]
+
+\resumeSubheading
+{Software Engineer Intern}{2024 -- Present}
+{Multiicon}{Remote / Gujarat, India}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Selected after winning Multiicon Hackathon among 50+ teams}
+  \resumeItem{Worked on backend implementation for the flight module using .NET APIs and service-layer changes}
+  \resumeItem{Implemented request validation, authentication checks, and DB-integrated workflow updates}
+  \resumeItem{Refined error handling and response contracts for more predictable client integration}
+\end{itemize}
+
+\end{itemize}
+
+\section{Selected Backend Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Continuum --- Distributed Simulation Platform} \\
+\textit{.NET 10, Microservices, RabbitMQ, Redis, SignalR, Hangfire} \\
+\href{https://github.com/Dhairya3391/continuum}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Developed 6 backend services with shared model/contract projects in a microservice architecture}
+  \resumeItem{Implemented RabbitMQ event publishing/subscribing and fallback behavior when broker is unavailable}
+  \resumeItem{Integrated Redis caching, Hangfire recurring jobs, JWT authentication, and fixed-window rate limiting}
+  \resumeItem{Maintained service routes for auth, personality inputs, particle lifecycle, simulation state, and streams}
+\end{itemize}
+
+\item \textbf{Aarambh Backend --- LMS API Layer} \\
+\textit{ASP.NET Core (.NET 8), SQL Server, EF Core, FluentValidation, AutoMapper} \\
+\href{https://github.com/Dhairya3391/Aarambh}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Implemented 12 controllers and 76 route handlers covering auth, users, institutes, courses, and enrollment}
+  \resumeItem{Built service/repository layers with DTO mapping and validation pipeline}
+  \resumeItem{Configured JWT auth, global exception middleware, CORS policy, and SQL Server retry/query settings}
+\end{itemize}
+
+\item \textbf{SecureAttend --- Face Recognition Attendance Backend} \\
+\textit{FastAPI, OpenCV, face\_recognition, SQLite, Docker} \\
+\href{https://github.com/Dhairya3391/SecureAttend}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built FastAPI application with camera, users, attendance, and auth modules}
+  \resumeItem{Implemented 45 API routes including attendance reports, CSV export, and camera-control operations}
+  \resumeItem{Integrated face-encoding pipeline and attendance logging with SQLite persistence}
+\end{itemize}
+
+\item \textbf{DevAuth --- Dev Recruitment Platform Backend} \\
+\textit{TypeScript, Express, PostgreSQL, Redis} \\
+\href{https://github.com/Dhairya3391/devAuth}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built multi-service backend including integration, analysis, ML, and queue-worker services}
+  \resumeItem{Implemented auth, repository, analysis, candidate, and pipeline routes with middleware and rate limiting}
+  \resumeItem{Integrated PostgreSQL and Redis with asynchronous worker pipelines}
+\end{itemize}
+
+\item \textbf{Wallyzer Backend APIs} \\
+\textit{Flask, PyTorch, scikit-learn, NumPy} \\
+\href{https://github.com/Dhairya3391/wallyzer}{GitHub}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{Built Flask endpoints for analysis, image serving, clustering, duplicate discovery, and cache operations}
+  \resumeItem{Implemented analysis-result caching and cache validation/cleanup workflows}
+  \resumeItem{Connected backend outputs to frontend-oriented response formats for gallery filters}
+\end{itemize}
+
+\end{itemize}
+
+\section{Additional Project}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{EduBrief} --- Built a Python content-generation backend/CLI that extracts syllabus text from PDFs, applies templates, and runs concurrent generation with provider fallback between OpenAI and Gemini. \href{https://github.com/Dhairya3391/EduBrief}{GitHub}}
+\end{itemize}
+
+\section{Open Source}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{ani-cli Contributor (11.8k+ stars)} --- Contributed fixes for iina next-button flow and Steam Deck patch URL handling. \href{https://github.com/pystardust/ani-cli}{Upstream} \textbar{} \href{https://github.com/Dhairya3391/ani-cli}{Fork}}
+\end{itemize}
+
+\section{Achievements}
+\begin{itemize}[leftmargin=*]
+  \resumeItem{\textbf{Multiicon Hackathon Winner} --- 1st place among 50+ teams; secured internship opportunity}
+  \resumeItem{\textbf{University Chess Gold Medalist; AIU Inter-University Participant}}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=*]
+
+\resumeSubheading
+{Bachelor of Technology --- Computer Science and Engineering}{Expected May 2027}
+{Darshan University, Rajkot, Gujarat}{CGPA: 8.68/10}
+
+\resumeSubheading
+{Diploma in Computer Science and Engineering}{May 2023}
+{Kalyan Polytechnic, Jamnagar, Gujarat}{First Class with Distinction}
+
+\end{itemize}
+
+\end{document}
